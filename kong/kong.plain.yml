@@ -1,0 +1,9 @@
+# The customer's Kong BEFORE Defender: one service (difi-app) and one route. Declarative, no database.
+_format_version: "3.0"
+services:
+  - name: difi-app
+    url: http://difi-app:80
+    routes:
+      - name: difi-app-all
+        paths: ["/"]
+        protocols: ["http", "https"]

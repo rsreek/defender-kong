@@ -1,0 +1,5 @@
+# secrets and local-only files: never commit
+.env
+uap-cas/
+ca-plus-uap.crt
+kong/kong.defender.yml
